@@ -1,5 +1,5 @@
 {
-  "name": "clownkit",
+  "name": "@nzsc/clownkit",
   "version": "0.1.0",
   "description": "A microlibrary for interacting with an nzsc2p Cloud Firestore database.",
   "main": "src/index.js",
