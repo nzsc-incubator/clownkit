@@ -1,2 +1,4 @@
+import * as consts from './helpers/consts';
+
 export { default as Clownkit } from './Clownkit';
-export * as consts from './helpers/consts';
+export { consts };
