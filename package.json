@@ -1,0 +1,20 @@
+{
+  "name": "clownkit",
+  "version": "0.1.0",
+  "description": "A microlibrary for interacting with an nzsc2p Cloud Firestore database.",
+  "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nzsc-incubator/clownkit.git"
+  },
+  "keywords": [
+    "nzsc",
+    "clownkit"
+  ],
+  "author": "Kyle Lin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nzsc-incubator/clownkit/issues"
+  },
+  "homepage": "https://github.com/nzsc-incubator/clownkit#readme"
+}
