@@ -1,4 +1,4 @@
-import list from './list';
+import listOpen from './listOpen';
 import listClosed from './listClosed';
 import join from './join';
 import create from './create';
@@ -14,8 +14,8 @@ class Clownkit {
     this.firebase = firebase;
   }
 
-  list() {
-    return list(this.firebase);
+  listOpen() {
+    return listOpen(this.firebase);
   }
 
   listClosed() {
