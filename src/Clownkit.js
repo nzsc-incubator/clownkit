@@ -1,5 +1,5 @@
 import list from './list';
-import listAll from './listAll';
+import listClosed from './listClosed';
 import join from './join';
 import create from './create';
 import waitForRoomToBeFull from './waitForRoomToBeFull';
@@ -18,8 +18,8 @@ class Clownkit {
     return list(this.firebase);
   }
 
-  listAll() {
-    return listAll(this.firebase);
+  listClosed() {
+    return listClosed(this.firebase);
   }
 
   join(roomName) {
