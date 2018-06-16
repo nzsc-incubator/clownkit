@@ -25,12 +25,12 @@ const create = async (firebase, roomName) => {
     });
     await guardianRef.update({
       state: A_CREATED
-    })
+    });
   } catch (e) {
     throw {
       isExpected: false,
       raw: e,
-    }
+    };
   }
 };
 

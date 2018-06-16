@@ -14,7 +14,7 @@ const join = async (firebase, roomName) => {
   } catch {
     throw {
       isExpected: true,
-    }
+    };
   }
 
   try {
@@ -24,7 +24,7 @@ const join = async (firebase, roomName) => {
   } catch {
     throw {
       isExpected: false,
-    }
+    };
   }
 };
 
