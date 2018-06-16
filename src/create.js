@@ -8,7 +8,8 @@ const create = async (firebase, roomName) => {
 
   try {
     await guardianRef.set({
-      state: NONE_CREATED
+      state: NONE_CREATED,
+      timeCreated: firebase.firestore.FieldValue.serverTimestamp(),
     });
   } catch (e) {
     throw {
