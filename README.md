@@ -29,10 +29,26 @@ const clownkit = new Clownkit(firebase);
 #### `Clownkit`
 ##### Instance methods (non-static):
 
-###### `list()`
+###### `listOpen()`
 Returns an array of open room names.
 ```javascript
-const roomNames = await clownkit.list();
+const namesOfRoomsICanJoin = await clownkit.listOpen();
+```
+
+###### `listClosed()`
+Returns an array of closed room names.
+```javascript
+const namesOfRoomsICannotJoin = await clownkit.listClosed();
+```
+
+###### `cleanUp()`
+Completely destroys every game room that is older than an hour.
+```javascript
+try {
+  await clownkit.cleanUp();
+} catch (e) {
+  console.log('Something went wrong.');
+}
 ```
 
 ###### `join(roomName)`
