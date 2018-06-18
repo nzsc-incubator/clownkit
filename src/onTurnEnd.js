@@ -15,7 +15,7 @@ const onTurnEnd = (firebase, roomName, callback) => {
 
     async (guardianDoc) => {
       const { state } = guardianDoc.data();
-      if (guardianDoc.hasPendingWrites
+      if (guardianDoc.metadata.hasPendingWrites
         || state === cachedState
         || ![NONE_VIEWED, A_VIEWED, B_VIEWED].includes(state)
       ) {
